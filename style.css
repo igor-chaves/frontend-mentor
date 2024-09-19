@@ -1,52 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+
+  --grey700: hsl(0, 0%, 20%);
+  --grey800: hsl(0, 0%, 12%);
+  --grey900: hsl(0, 0%, 8%);
+}
+
 body {
-  background-color: rgb(255, 221, 0);
-  min-height: 100vh;
-  width: 100%;
-  /* margin: 0 auto; */
+  background-color: var(--grey900);
+  color: var(--white);
+  font-size: 1rem;
+  font-family: "Inter";
+  height: 100vh;
+
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+p {
+  width: 100%;
+  text-align: center;
 }
 
 .card {
-  background-color: whitesmoke;
-  margin: 2rem;
-  padding: 1.5rem;
-  width: 360px;
+  background-color: var(--grey800);
   border-radius: 1rem;
-  border: 1px solid black;
-}
-.card > img {
-  width: 100%;
-  border-radius: 0.75rem;
-}
-.card .learning {
-  background-color: rgb(255, 221, 0);
-  width: fit-content;
-  padding: 0.5rem 1rem;
-  margin: 1.5rem 0 1rem 0;
-  border-radius: 0.3rem;
-  font-weight: bolder;
-}
-.card .text {
-  color: gray;
-}
-.card h2 {
-  margin: 1rem 0;
-}
-.card .author-container {
-  margin-top: 2rem;
-  gap: 1rem;
+  width: 375px;
+  margin: 1rem;
+  padding: 2rem;
+
   display: flex;
   align-items: center;
-  font-weight: bolder;
+  flex-direction: column;
+  justify-content: center;
 }
-.card .author-container img {
-  width: 15%;
+.card img {
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: 2rem;
+}
+.card h2 {
+  font-weight: 700;
+}
+.card h3 {
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin: 0.5rem 0 2.5rem;
+  color: var(--green);
+}
+
+.btn {
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  background-color: var(--grey700);
 }
