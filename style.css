@@ -3,6 +3,8 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style-type: none;
   box-sizing: border-box;
 }
 
@@ -27,7 +29,8 @@ body {
   align-items: center;
 }
 
-p {
+p,
+a {
   width: 100%;
   text-align: center;
 }
@@ -60,8 +63,13 @@ p {
 }
 
 .btn {
-  margin-top: 1.5rem;
+  color: var(--white);
+  margin-top: 1rem;
   padding: 1rem 0;
   border-radius: 0.5rem;
   background-color: var(--grey700);
+}
+.btn:hover {
+  background-color: var(--green);
+  color: var(--grey900);
 }
